@@ -1,0 +1,16 @@
+PODS:
+  - ButtonProgressBar-iOS (1.0.1)
+
+DEPENDENCIES:
+  - ButtonProgressBar-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  ButtonProgressBar-iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ButtonProgressBar-iOS: 2037b547e5264d766532d4c4acee0ffdab9dcc94
+
+PODFILE CHECKSUM: a548b17bd8b802640103e4213f7b8b58d8e4ea54
+
+COCOAPODS: 1.11.2

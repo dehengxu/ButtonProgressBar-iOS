@@ -31,6 +31,7 @@ Text enlarge on tap. Animated completion image.
    s.social_media_url = 'https://twitter.com/thePsguy'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'Source/*.swift'
 end
