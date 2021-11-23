@@ -25,11 +25,23 @@ import UIKit
 public class ButtonProgressBar: UIButton {
     
     private var cornerRadius: CGFloat = 5
-    public private(set) var progress: CGFloat = 0.0
+    public private(set) var progress: CGFloat = 0.0 {
+        didSet {
+            if progress > 1.0 {
+                progressLayer.strokeEnd = 1.0 / 2.0
+                return
+            } else if progress < 0.0 {
+                progressLayer.strokeEnd = 0
+                return
+            }
+            progressLayer.strokeEnd = progress / 2.0
+        }
+    }
     
     var indeterminate: Bool = false
     
     private let progressLayer = CAShapeLayer()
+    let progressView = UIView()
     
     private var progressColor = UIColor(red: 0/255, green: 140/255, blue: 245/255, alpha: 1.0)
     
@@ -53,14 +65,16 @@ public class ButtonProgressBar: UIButton {
         imageView?.tintColor = .white
         self.hideImage(true)
 
-        let rectanglePath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
+        let pathHeight = (frame.height - 4)
+        let pathRect = CGRect(x: 2, y: 2 + pathHeight / 2.0, width: frame.width - 4, height: pathHeight / 2.0 )
+        let bezierPath = UIBezierPath(rect: pathRect)
 
-        progressLayer.path = rectanglePath.cgPath
-        progressLayer.fillColor = UIColor.clear.cgColor
+        progressLayer.path = bezierPath.cgPath
+        progressLayer.fillColor = UIColor.green.cgColor
         progressLayer.strokeColor = progressColor.cgColor
-
-        progressLayer.strokeEnd = 0.0
-        progressLayer.lineWidth = frame.height*2
+        progressLayer.frame = bounds
+        progressLayer.strokeEnd = 0
+        progressLayer.lineWidth = pathHeight * 2
 
         layer.addSublayer(progressLayer)
         self.bringSubviewToFront(titleLabel!)
@@ -155,8 +169,13 @@ public class ButtonProgressBar: UIButton {
      - Parameter animated: If true, linearly animates to target progress value.
     */
     public func setProgress(progress: CGFloat, _ animated: Bool) {
+        var _progress = progress
+        if _progress > 1.0 {
+            _progress = 1.0
+        }
+
         if !animated {
-            progressLayer.strokeEnd = progress / 2
+            progressLayer.strokeEnd = _progress / 2
 
 			// progressLayer.strokeEnd = progress * self.layer.frame.width
 #if DEBUG
@@ -166,13 +185,13 @@ public class ButtonProgressBar: UIButton {
         else {
             let stroke = CABasicAnimation(keyPath: "strokeEnd")
             stroke.fromValue = self.progress
-            stroke.toValue = progress
+            stroke.toValue = _progress
             stroke.fillMode = CAMediaTimingFillMode.forwards
             stroke.isRemovedOnCompletion = false
             stroke.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
             self.progressLayer.add(stroke, forKey: nil)
         }
-        self.progress = progress
+        self.progress = _progress
     }
     
     /**

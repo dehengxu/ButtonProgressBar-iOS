@@ -1,16 +1,24 @@
 PODS:
-  - ButtonProgressBar-iOS (1.0.1)
+  - ButtonProgressBar-iOS (1.0.1):
+    - SnapKit
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - ButtonProgressBar-iOS (from `../`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   ButtonProgressBar-iOS:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ButtonProgressBar-iOS: 2037b547e5264d766532d4c4acee0ffdab9dcc94
+  ButtonProgressBar-iOS: 922ea2dde7c6ac2125aea8705b79e3f01708fa4e
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: a548b17bd8b802640103e4213f7b8b58d8e4ea54
+PODFILE CHECKSUM: a6f0f7720e0640400ed1caabc4b1e06e1011a32a
 
 COCOAPODS: 1.11.2

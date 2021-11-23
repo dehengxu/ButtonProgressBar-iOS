@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'ButtonProgressBar-iOS_Example' do
   pod 'ButtonProgressBar-iOS', :path => '../'
-
+  pod 'SnapKit'
   target 'ButtonProgressBar-iOS_Tests' do
     inherit! :search_paths
 

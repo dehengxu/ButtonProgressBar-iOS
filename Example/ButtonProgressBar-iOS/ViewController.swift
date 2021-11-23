@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var timePadding: UITextField!
 
 	var downloadButton: ButtonProgressBar!
+    var downloadBtn: ProgressButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,11 +62,16 @@ class ViewController: UIViewController {
         timePadding.borderStyle = .roundedRect
         timePadding.attributedPlaceholder = NSAttributedString(string: "Padding Time", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 8)])
 
-		downloadButton = ButtonProgressBar(frame: CGRect(x: 0, y: 160, width: self.view.frame.width*0.45, height: 44))
+		downloadButton = ButtonProgressBar(frame: CGRect(x: 0, y: 130, width: self.view.frame.width*0.45, height: 44))
 		downloadButton.addTarget(self, action: #selector(tapOnTest), for: .touchUpInside)
+        downloadButton.layer.cornerRadius = 22
+        downloadButton.layer.masksToBounds = true
 		downloadButton.center.x = self.view.center.x
 		downloadButton.center.y = self.view.center.y + 100
 		downloadButton.setTitle("Test", for: .normal)
+        downloadButton.setProgressColor(color: .red)
+        downloadButton.setProgress(progress: 0.5, false)
+
 		self.view.addSubview(downloadButton)
 
         self.view.addSubview(completionButton)
@@ -73,6 +79,26 @@ class ViewController: UIViewController {
         self.view.addSubview(timePeriod)
         self.view.addSubview(typeSelector)
         self.view.addSubview(progressButton)
+
+        self.downloadBtn = ProgressButton(frame: CGRect(x: 0, y: 160, width: self.view.frame.width*0.45, height: 44))
+        self.view.addSubview(downloadBtn)
+        downloadBtn.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(downloadButton.snp.bottom).offset(10)
+            $0.size.equalTo(downloadButton)
+        }
+        downloadBtn.masksToBounds = true
+        downloadBtn.cornerRadius = 22
+        downloadBtn.progressNegativeColor = .black
+        downloadBtn.setProgressColor(color: .red)
+        downloadBtn.setTitle("Download", for: .normal)
+        downloadBtn.setTitleColor(.white, for: .normal)
+        downloadBtn.addTarget(self, action: #selector(tapOnTest), for: .touchUpInside)
+        let prog = 0.0
+        downloadBtn.setProgress(progress: prog, false)
+        downloadButton.setProgress(progress: prog, false)
+
+
     }
     
     @objc func progressComplete(sender: AnyObject?) {
@@ -83,6 +109,7 @@ class ViewController: UIViewController {
 		//		downloadButton.setProgress(progress: 0.5, true)
 		//		downloadButton.startIndeterminate(withTimePeriod: 2.0, andTimePadding: 0.4)
 		//downloadButton.triggerCompletion()
+        let multiplier: CGFloat = 0.05
 		if let btn = downloadButton {
 			if btn.progress >= 1.0 {
 				btn.resetProgress()
@@ -90,10 +117,20 @@ class ViewController: UIViewController {
 			btn.setProgressColor(color: .red)
 			print("btn from \(btn.progress)")
 			//btn?.setProgress(progress: btn!.progress + 0.01, false)
-			btn.setProgress(progress: btn.progress + 0.1, false)
+			// print("btn from \(btn.progress)")
+			btn.setProgress(progress: btn.progress + multiplier, false)
 			//btn?.triggerCompletion()
-			print("btn to \(btn.progress)")
+			// print("btn to \(btn.progress)")
 		}
+        if let btn = downloadBtn {
+            if btn.progress >= 1.0 {
+                btn.resetProgress()
+            }
+            print("btn from \(btn.progress)")
+            btn.setProgress(progress: btn.progress + multiplier, false)
+            //btn?.triggerCompletion()
+            print("btn to \(btn.progress)")
+        }
 	}
 
 	@objc func stepProgress(_ sender: Timer) {
