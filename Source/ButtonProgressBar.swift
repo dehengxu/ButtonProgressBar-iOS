@@ -58,10 +58,10 @@ public class ButtonProgressBar: UIButton {
         progressLayer.path = rectanglePath.cgPath
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.strokeColor = progressColor.cgColor
-        
+
         progressLayer.strokeEnd = 0.0
         progressLayer.lineWidth = frame.height*2
-        
+
         layer.addSublayer(progressLayer)
         self.bringSubviewToFront(titleLabel!)
         self.bringSubviewToFront(imageView!)
@@ -87,10 +87,10 @@ public class ButtonProgressBar: UIButton {
         progressLayer.path = rectanglePath.cgPath
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.strokeColor = progressColor.cgColor
-        
+
         progressLayer.strokeEnd = 0.0
         progressLayer.lineWidth = frame.height*2
-        
+
         layer.addSublayer(progressLayer)
         self.bringSubviewToFront(titleLabel!)
         self.bringSubviewToFront(imageView!)
@@ -157,6 +157,11 @@ public class ButtonProgressBar: UIButton {
     public func setProgress(progress: CGFloat, _ animated: Bool) {
         if !animated {
             progressLayer.strokeEnd = progress / 2
+
+			// progressLayer.strokeEnd = progress * self.layer.frame.width
+#if DEBUG
+			print("start: \(progressLayer.strokeStart), strokeEnd: \(progressLayer.strokeEnd) / \(self.layer.frame.width), \(self.progressLayer.frame.width)")
+#endif
         }
         else {
             let stroke = CABasicAnimation(keyPath: "strokeEnd")
