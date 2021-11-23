@@ -53,15 +53,16 @@ public class ButtonProgressBar: UIButton {
         imageView?.tintColor = .white
         self.hideImage(true)
 
-        let rectanglePath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
+        let pathRect = CGRect(x: 0, y: frame.height / 2.0, width: frame.width, height: frame.height / 3.0)
+        let bezierPath = UIBezierPath(rect: pathRect)
 
-        progressLayer.path = rectanglePath.cgPath
-        progressLayer.fillColor = UIColor.clear.cgColor
+        progressLayer.path = bezierPath.cgPath
+        progressLayer.fillColor = UIColor.green.cgColor
         progressLayer.strokeColor = progressColor.cgColor
-        
-        progressLayer.strokeEnd = 0.0
-        progressLayer.lineWidth = frame.height*2
-        
+        progressLayer.frame = .zero
+        progressLayer.strokeEnd = 0
+        progressLayer.lineWidth = pathRect.height * 2
+
         layer.addSublayer(progressLayer)
         self.bringSubviewToFront(titleLabel!)
         self.bringSubviewToFront(imageView!)
@@ -87,10 +88,10 @@ public class ButtonProgressBar: UIButton {
         progressLayer.path = rectanglePath.cgPath
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.strokeColor = progressColor.cgColor
-        
+
         progressLayer.strokeEnd = 0.0
         progressLayer.lineWidth = frame.height*2
-        
+
         layer.addSublayer(progressLayer)
         self.bringSubviewToFront(titleLabel!)
         self.bringSubviewToFront(imageView!)
@@ -157,6 +158,11 @@ public class ButtonProgressBar: UIButton {
     public func setProgress(progress: CGFloat, _ animated: Bool) {
         if !animated {
             progressLayer.strokeEnd = progress / 2
+
+			// progressLayer.strokeEnd = progress * self.layer.frame.width
+#if DEBUG
+			print("start: \(progressLayer.strokeStart), strokeEnd: \(progressLayer.strokeEnd) / \(self.layer.frame.width), \(self.progressLayer.frame.width)")
+#endif
         }
         else {
             let stroke = CABasicAnimation(keyPath: "strokeEnd")

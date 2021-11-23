@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     var timePeriod: UITextField!
     var timePadding: UITextField!
+
+	var downloadButton: ButtonProgressBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +60,16 @@ class ViewController: UIViewController {
         timePadding.keyboardType = .numberPad
         timePadding.borderStyle = .roundedRect
         timePadding.attributedPlaceholder = NSAttributedString(string: "Padding Time", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 8)])
-        
+
+		downloadButton = ButtonProgressBar(frame: CGRect(x: 0, y: 160, width: self.view.frame.width*0.45, height: 44))
+		downloadButton.addTarget(self, action: #selector(tapOnTest), for: .touchUpInside)
+		downloadButton.center.x = self.view.center.x
+		downloadButton.center.y = self.view.center.y + 100
+		downloadButton.setTitle("Test", for: .normal)
+        downloadButton.setProgressColor(color: .red)
+        downloadButton.setProgress(progress: 0.5, false)
+		self.view.addSubview(downloadButton)
+
         self.view.addSubview(completionButton)
         self.view.addSubview(timePadding)
         self.view.addSubview(timePeriod)
@@ -69,6 +80,27 @@ class ViewController: UIViewController {
     @objc func progressComplete(sender: AnyObject?) {
         progressButton.triggerCompletion()
     }
+
+	@objc func tapOnTest() {
+		//		downloadButton.setProgress(progress: 0.5, true)
+		//		downloadButton.startIndeterminate(withTimePeriod: 2.0, andTimePadding: 0.4)
+		//downloadButton.triggerCompletion()
+		if let btn = downloadButton {
+			if btn.progress >= 1.0 {
+				btn.resetProgress()
+			}
+			btn.setProgressColor(color: .red)
+			print("btn from \(btn.progress)")
+			//btn?.setProgress(progress: btn!.progress + 0.01, false)
+			btn.setProgress(progress: btn.progress + 0.1, false)
+			//btn?.triggerCompletion()
+			print("btn to \(btn.progress)")
+		}
+	}
+
+	@objc func stepProgress(_ sender: Timer) {
+
+	}
     
     @objc func tapped(){
         let time = Double(timePeriod.text != "" ? timePeriod.text! : "1")!
