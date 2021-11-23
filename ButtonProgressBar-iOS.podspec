@@ -30,8 +30,9 @@ Text enlarge on tap. Animated completion image.
   s.source           = { :git => 'https://github.com/thePsguy/ButtonProgressBar-iOS.git', :tag => s.version.to_s }
    s.social_media_url = 'https://twitter.com/thePsguy'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '5.0'
 
   s.source_files = 'Source/*.swift'
+  s.dependency 'SnapKit'
 end

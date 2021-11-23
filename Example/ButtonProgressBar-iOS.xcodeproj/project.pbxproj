@@ -224,7 +224,6 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 375GT6S3QN;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -295,10 +294,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ButtonProgressBar-iOS/ButtonProgressBar_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ButtonProgressBar_iOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -515,7 +516,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonProgressBar-iOS_Example.app/ButtonProgressBar-iOS_Example";
 			};
 			name = Debug;
 		};
@@ -534,7 +534,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonProgressBar-iOS_Example.app/ButtonProgressBar-iOS_Example";
 			};
 			name = Release;
 		};

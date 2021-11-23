@@ -7,80 +7,171 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0619DBCE69DCCEA8E4CB860754F98590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0A9F74EC16AF8B958E01531BCF054402 /* ButtonProgressBar-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D327909FD42AF001012C29E7A4184A84 /* ButtonProgressBar-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		017D8E23FFFAD02F9B461E019FB3306B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
+		01F31A5CBA528028B6BF89C04FF2A013 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */; };
+		049BDC0E39F547A39B34A2D6FE5E9C04 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
+		08CD1A6D0E8254C2A79A22FCA7FA9E0D /* ButtonProgressBar-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 383155FC62075FB6CE95D0A560CF93A4 /* ButtonProgressBar-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		098FEACBDC85EDFFDE7616E590DDB173 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1289E69886865C4241277016A585D521 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
+		15E7C6F60688E7AE20464C56558B9CF6 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
+		203FAB4DF04BA05294C1EBA4912437CD /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
+		21A6A95A2B0A6EC2F2F76F8FA698AF2D /* ButtonProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EAD5CD8D7DF07F5FD5B5F19E7DA93 /* ButtonProgressBar.swift */; };
+		2300EB55801F3C75E6900ECF267397DA /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */; };
+		23A1D538A9CDC0E1529C5880D3817692 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
 		2743781CF4B553EDE7CA20AF987F8493 /* Pods-ButtonProgressBar-iOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A26310E1A135C6BB7B2E45C645C3F505 /* Pods-ButtonProgressBar-iOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E4DAAA5D2E2E80A07EF37E743171B9E /* ButtonProgressBar-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E7B41F37976BEBE4CC8F6EB054BB6 /* ButtonProgressBar-iOS-dummy.m */; };
+		2F9C15250FEF2AE0E4C7C554907722F0 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
+		3D8F7B901982342844267C59F5BFA727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		4A5285650763E06F663A42780A67CDC7 /* Pods-ButtonProgressBar-iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE982E2DA6D82A86D33620947710C5 /* Pods-ButtonProgressBar-iOS_Tests-dummy.m */; };
-		4DFC7537EBB9EDECEFA8F5F95ACE69B9 /* ButtonProgressBar-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3076F8A73EA222F2C19AC2A1EF8D40F1 /* ButtonProgressBar-iOS-dummy.m */; };
-		6D7DF33CC6C746CF5AF8F719FF0F7C8F /* Pods-ButtonProgressBar-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FB2F81CAD423D18F48A21780E16811 /* Pods-ButtonProgressBar-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E550D94B9E78788C6E5B193F665B3D8 /* Pods-ButtonProgressBar-iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78261C77E0F192B4D088D22296EED06B /* Pods-ButtonProgressBar-iOS_Example-dummy.m */; };
+		4E98267841C85116878077E6CFFB4865 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
+		5B92C871C840F838DB2382A3483EDD6E /* Pods-ButtonProgressBar-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FB2F81CAD423D18F48A21780E16811 /* Pods-ButtonProgressBar-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D4AEFF4426A819FF6186BC48D3CCA5F /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
+		5E92D0B873AEA59036C6B2F0DAE2E4C5 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
+		64BBFB90316A811BD30EBF70F168A9BA /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
+		6C6300F8D3E19B5119D49225F4561214 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
+		6EF9E8E9CFF8818C03CC8EA5EDF931DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		734F7B22C4ACB1A1C3364061CFB2C871 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
+		74ABE7F4C7F4D2B3E9477513FF73C540 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
+		77CE05A3F7ABC7CC4651F699894A79F4 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */; };
+		7AA5A03C0B2E43376BD0AA5802232778 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
+		7C3747953D4DA2F81125E68A3C8FB489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83573567140F29FE9B349ACE5AC625B0 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
+		86A3FAEF7037CE045D54BFBC2AFB2993 /* Pods-ButtonProgressBar-iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78261C77E0F192B4D088D22296EED06B /* Pods-ButtonProgressBar-iOS_Example-dummy.m */; };
+		8A88D21C19BF16DD19C6BD681592375D /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
+		8C45AB7FACE7869C437AF101B71FB823 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */; };
+		9090735A03BC8F2D550BA552C4646CD1 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */; };
+		90E06E499F3D00DE5BA4F7AD4528A9A8 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
+		9AD69A85766E798F7667D278AC3638F0 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
 		A46D273202355A5577B82E31B300EF18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		AB9D07F8E19025B9BF7E4AEBCB100C82 /* ButtonProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84642EEFE9C42784751E48B23AFDD1C1 /* ButtonProgressBar.swift */; };
-		CFD7B3DEF834B2FB4E7F63C02266696E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B99B1B3189783D1E1DD345DF9F233ACF /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
+		C5E69D6A4A3FF5C8405B633619CC6A76 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
+		C8EB7EA1E565324579EA812BEBF8C9AB /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
+		CDD5900E2117A2E62E1BDBA414B236EF /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10277622F15AC2870B780DFDA79CE7 /* ProgressButton.swift */; };
+		CFAD8244C22EFF904DAC3AE1CD40AEC7 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
+		D0A574FD0B228553267212046F81C883 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
+		D3F63E45754ECCEF0853FF5CB145A655 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
+		DA9A789122D85960452DD3ED2A72E884 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
+		DC3C1A546167F9725C89DC481F4157A4 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
+		DE63646BF0C978D1905F666E0D4262BE /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */; };
+		E544EF10E2EA4CC7EE551BE43E43DD57 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
+		EB8A7033F2BEB2BC77793EDCB7B9100F /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
+		F93EDB630040679D4B1945D251F422A7 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
+		FA6C1FAD95CE78514978A29D6BBA8750 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		928FA62C4E32E2B780E743137F58E0E5 /* PBXContainerItemProxy */ = {
+		214DE97EDD54C4AAD547E822C40B0CD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDD09365F063A2127ADA1530B2E37F1A;
-			remoteInfo = "ButtonProgressBar-iOS";
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
 		};
-		BD16B71A427CE56BBDE077A519E593DC /* PBXContainerItemProxy */ = {
+		A077A8653F8DF6979C8D75A4019FBFDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C715E447CFDB03E87D4143F47C6FB954;
 			remoteInfo = "Pods-ButtonProgressBar-iOS_Example";
 		};
+		B494DA710C9599102E66FA0878D812E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		FF1FDBA8C04462BC781864A0853A304D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDD09365F063A2127ADA1530B2E37F1A;
+			remoteInfo = "ButtonProgressBar-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		01FB2F81CAD423D18F48A21780E16811 /* Pods-ButtonProgressBar-iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ButtonProgressBar-iOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		0C27851FC0CDA3F832CA89554105E030 /* Pods-ButtonProgressBar-iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ButtonProgressBar-iOS_Tests.modulemap"; sourceTree = "<group>"; };
-		1CBE7A73997A8342AB4C9DE486971CC1 /* ButtonProgressBar-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ButtonProgressBar-iOS.modulemap"; sourceTree = "<group>"; };
-		3076F8A73EA222F2C19AC2A1EF8D40F1 /* ButtonProgressBar-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ButtonProgressBar-iOS-dummy.m"; sourceTree = "<group>"; };
-		3312B489089A85666624DE0F0EF514CD /* ButtonProgressBar-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ButtonProgressBar-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		17570CA0AB50DFF6B523684C7E96A9B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1A8E7B41F37976BEBE4CC8F6EB054BB6 /* ButtonProgressBar-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ButtonProgressBar-iOS-dummy.m"; sourceTree = "<group>"; };
+		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		383155FC62075FB6CE95D0A560CF93A4 /* ButtonProgressBar-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonProgressBar-iOS-umbrella.h"; sourceTree = "<group>"; };
+		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		3E5A15D67D2DCC903652AF2064C0DD03 /* Pods-ButtonProgressBar-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ButtonProgressBar-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EC6DA58A6BB2ADD6D4B7DD57A937597 /* Pods-ButtonProgressBar-iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ButtonProgressBar-iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		413C236A9DEE1BF093DDC3A7057F75B0 /* ButtonProgressBar-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonProgressBar-iOS-prefix.pch"; sourceTree = "<group>"; };
+		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		464C12DE54DA7D0969DD25C6EEFA7756 /* Pods-ButtonProgressBar-iOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ButtonProgressBar-iOS_Example"; path = Pods_ButtonProgressBar_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		4A2CF2794EEBF7130FA6268E88829F74 /* Pods-ButtonProgressBar-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ButtonProgressBar-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		50B7B1D221B342A7391150A4AAB19B6A /* Pods-ButtonProgressBar-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ButtonProgressBar-iOS_Example.modulemap"; sourceTree = "<group>"; };
-		5ED2C84B4E4EBDB9132AE8D46670E56B /* ButtonProgressBar-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ButtonProgressBar-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		5F35B2ED001197C6C6ECB06CA5445779 /* Pods-ButtonProgressBar-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ButtonProgressBar-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5F59D91C5D8B58D399B81ABF6714EBDD /* Pods-ButtonProgressBar-iOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ButtonProgressBar-iOS_Tests-Info.plist"; sourceTree = "<group>"; };
-		67660C0D9A6FD015A75F7EA457EB7F39 /* ButtonProgressBar-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "ButtonProgressBar-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		6AD9D95F2B01E4160CF54C4503EBB0D2 /* Pods-ButtonProgressBar-iOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ButtonProgressBar-iOS_Example-Info.plist"; sourceTree = "<group>"; };
+		6C29E4B791F4BA01ACDAA321D171959E /* ButtonProgressBar-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "ButtonProgressBar-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78261C77E0F192B4D088D22296EED06B /* Pods-ButtonProgressBar-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ButtonProgressBar-iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		82FC4FE0584B9A3F80C3463821D643ED /* Pods-ButtonProgressBar-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ButtonProgressBar-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
-		84642EEFE9C42784751E48B23AFDD1C1 /* ButtonProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonProgressBar.swift; path = Source/ButtonProgressBar.swift; sourceTree = "<group>"; };
+		8E8064C64ED1043CF39921904EC318F7 /* ButtonProgressBar-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ButtonProgressBar-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		944E71EE6252C0709901C9B76D84E669 /* Pods-ButtonProgressBar-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ButtonProgressBar-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B10277622F15AC2870B780DFDA79CE7 /* ProgressButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressButton.swift; path = Source/ProgressButton.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		A26310E1A135C6BB7B2E45C645C3F505 /* Pods-ButtonProgressBar-iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ButtonProgressBar-iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A2A6067197DC5F919ADCCD1552450667 /* ButtonProgressBar-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ButtonProgressBar-iOS.modulemap"; sourceTree = "<group>"; };
+		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		A5FC3D352545BE9D65E55286451A1E0D /* Pods-ButtonProgressBar-iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ButtonProgressBar-iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A9CA799F8052D9E487598DAA9CEB99F3 /* ButtonProgressBar-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ButtonProgressBar-iOS-Info.plist"; sourceTree = "<group>"; };
-		B6C6D130BD80C819BA9748B7F5DDE036 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		B14042ADD85AB478E35F015BF278EACC /* ButtonProgressBar-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ButtonProgressBar-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B7514D09941FC9F18DE952C9ABB073E2 /* ButtonProgressBar-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonProgressBar-iOS-prefix.pch"; sourceTree = "<group>"; };
 		B89B15B8FCB8B0F9921E843A6B210F3B /* ButtonProgressBar-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ButtonProgressBar-iOS"; path = ButtonProgressBar_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D327909FD42AF001012C29E7A4184A84 /* ButtonProgressBar-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonProgressBar-iOS-umbrella.h"; sourceTree = "<group>"; };
+		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		C62AE25539E7CD7AAFB3CA26B11B664C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		CBFB2F4A825E8F71E366E2B71F405313 /* ButtonProgressBar-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ButtonProgressBar-iOS-Info.plist"; sourceTree = "<group>"; };
+		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		DFCE982E2DA6D82A86D33620947710C5 /* Pods-ButtonProgressBar-iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ButtonProgressBar-iOS_Tests-dummy.m"; sourceTree = "<group>"; };
-		E7087B44DB106C8324DEA1D73B6FC00E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		E25EAD5CD8D7DF07F5FD5B5F19E7DA93 /* ButtonProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonProgressBar.swift; path = Source/ButtonProgressBar.swift; sourceTree = "<group>"; };
+		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 		EFAA3065A27BAD736BD925F05EAD96C4 /* Pods-ButtonProgressBar-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ButtonProgressBar-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		F28574DFFEB06BBF2D093E24B07B846F /* Pods-ButtonProgressBar-iOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ButtonProgressBar-iOS_Tests"; path = Pods_ButtonProgressBar_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EB0F573EB1341FE7FC0B02FB5483CE /* Pods-ButtonProgressBar-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ButtonProgressBar-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0ABF934E7000611724626098537095E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0619DBCE69DCCEA8E4CB860754F98590 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A33D2769E1ACCD5691FE45F5C1DF6D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,37 +180,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3887CB1F607730ED42735665C64BF24 /* Frameworks */ = {
+		3D0CE93CEB59A40E038D9580C51CD6F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD7B3DEF834B2FB4E7F63C02266696E /* Foundation.framework in Frameworks */,
+				3D8F7B901982342844267C59F5BFA727 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA30BCE4AD45C29F19A222969B6BB4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3747953D4DA2F81125E68A3C8FB489 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7FDEC5FD10C0C920F5FD1C8C1912B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF9E8E9CFF8818C03CC8EA5EDF931DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F33A478288E0F8C0E6CE052BAABFBEE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B89B15B8FCB8B0F9921E843A6B210F3B /* ButtonProgressBar-iOS */,
-				464C12DE54DA7D0969DD25C6EEFA7756 /* Pods-ButtonProgressBar-iOS_Example */,
-				F28574DFFEB06BBF2D093E24B07B846F /* Pods-ButtonProgressBar-iOS_Tests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2D95F4E4BE8FC04B742C064B98AC86CB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				67660C0D9A6FD015A75F7EA457EB7F39 /* ButtonProgressBar-iOS.podspec */,
-				B6C6D130BD80C819BA9748B7F5DDE036 /* LICENSE */,
-				E7087B44DB106C8324DEA1D73B6FC00E /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		4F9EAD52E992FE14F9DFEB73DB10F3FF /* Pods-ButtonProgressBar-iOS_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,12 +233,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		518BAEA87F408AF6DAF2A749D188A8AD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A3120CAC52E59DD3105BDBC70D8FA7 /* ButtonProgressBar-iOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5EC1B90A05A263F27CF1B1C4870AC9F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B89B15B8FCB8B0F9921E843A6B210F3B /* ButtonProgressBar-iOS */,
+				464C12DE54DA7D0969DD25C6EEFA7756 /* Pods-ButtonProgressBar-iOS_Example */,
+				F28574DFFEB06BBF2D093E24B07B846F /* Pods-ButtonProgressBar-iOS_Tests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70A3120CAC52E59DD3105BDBC70D8FA7 /* ButtonProgressBar-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E25EAD5CD8D7DF07F5FD5B5F19E7DA93 /* ButtonProgressBar.swift */,
+				9B10277622F15AC2870B780DFDA79CE7 /* ProgressButton.swift */,
+				BDB84674DD33C6145E30186785776FCE /* Pod */,
+				896F4BC2FA8AFCA38D17E33D08F377EE /* Support Files */,
+			);
+			name = "ButtonProgressBar-iOS";
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7A0DA8A9915E4ABD2970034EBE33FB4D /* Pods-ButtonProgressBar-iOS_Tests */ = {
@@ -170,36 +288,107 @@
 			path = "Target Support Files/Pods-ButtonProgressBar-iOS_Tests";
 			sourceTree = "<group>";
 		};
-		928DB93EBDD555BC11D5A96800C2FD80 /* Development Pods */ = {
+		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
-				F8EC64C7796693CEDDC8031BFD5BEC4D /* ButtonProgressBar-iOS */,
+				50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */,
+				13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */,
+				250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */,
+				6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */,
+				CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */,
+				91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */,
+				A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */,
+				7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */,
+				549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */,
+				7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */,
+				474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */,
+				66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */,
+				09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */,
+				BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */,
+				3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */,
+				C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */,
+				141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */,
+				E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */,
+				E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */,
+				11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */,
+				91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */,
+				724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */,
+				F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */,
+				47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */,
+				F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */,
+				9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */,
+				2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */,
+				25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */,
+				A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */,
+				EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */,
+				56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */,
+				D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */,
+				F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */,
+				464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */,
+				D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */,
+				6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */,
+				843EFF0C650682C304D518A9092EE9FD /* Support Files */,
 			);
-			name = "Development Pods";
+			name = SnapKit;
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		A53A15451DB398038FF4E6170C486A0A /* Support Files */ = {
+		843EFF0C650682C304D518A9092EE9FD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1CBE7A73997A8342AB4C9DE486971CC1 /* ButtonProgressBar-iOS.modulemap */,
-				3076F8A73EA222F2C19AC2A1EF8D40F1 /* ButtonProgressBar-iOS-dummy.m */,
-				A9CA799F8052D9E487598DAA9CEB99F3 /* ButtonProgressBar-iOS-Info.plist */,
-				413C236A9DEE1BF093DDC3A7057F75B0 /* ButtonProgressBar-iOS-prefix.pch */,
-				D327909FD42AF001012C29E7A4184A84 /* ButtonProgressBar-iOS-umbrella.h */,
-				5ED2C84B4E4EBDB9132AE8D46670E56B /* ButtonProgressBar-iOS.debug.xcconfig */,
-				3312B489089A85666624DE0F0EF514CD /* ButtonProgressBar-iOS.release.xcconfig */,
+				7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */,
+				E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */,
+				391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */,
+				E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */,
+				0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */,
+				7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */,
+				A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		896F4BC2FA8AFCA38D17E33D08F377EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6067197DC5F919ADCCD1552450667 /* ButtonProgressBar-iOS.modulemap */,
+				1A8E7B41F37976BEBE4CC8F6EB054BB6 /* ButtonProgressBar-iOS-dummy.m */,
+				CBFB2F4A825E8F71E366E2B71F405313 /* ButtonProgressBar-iOS-Info.plist */,
+				B7514D09941FC9F18DE952C9ABB073E2 /* ButtonProgressBar-iOS-prefix.pch */,
+				383155FC62075FB6CE95D0A560CF93A4 /* ButtonProgressBar-iOS-umbrella.h */,
+				8E8064C64ED1043CF39921904EC318F7 /* ButtonProgressBar-iOS.debug.xcconfig */,
+				B14042ADD85AB478E35F015BF278EACC /* ButtonProgressBar-iOS.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ButtonProgressBar-iOS";
+			sourceTree = "<group>";
+		};
+		BA22F08D059965C9A09F78196176CEDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F02E3862C6E84203E8324D9D0088797 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDB84674DD33C6145E30186785776FCE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6C29E4B791F4BA01ACDAA321D171959E /* ButtonProgressBar-iOS.podspec */,
+				17570CA0AB50DFF6B523684C7E96A9B8 /* LICENSE */,
+				C62AE25539E7CD7AAFB3CA26B11B664C /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				928DB93EBDD555BC11D5A96800C2FD80 /* Development Pods */,
+				518BAEA87F408AF6DAF2A749D188A8AD /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				0F33A478288E0F8C0E6CE052BAABFBEE /* Products */,
+				BA22F08D059965C9A09F78196176CEDB /* Pods */,
+				5EC1B90A05A263F27CF1B1C4870AC9F0 /* Products */,
 				510CC6C15B366280AEF8F71BFAEF6AAE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -210,17 +399,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F8EC64C7796693CEDDC8031BFD5BEC4D /* ButtonProgressBar-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				84642EEFE9C42784751E48B23AFDD1C1 /* ButtonProgressBar.swift */,
-				2D95F4E4BE8FC04B742C064B98AC86CB /* Pod */,
-				A53A15451DB398038FF4E6170C486A0A /* Support Files */,
-			);
-			name = "ButtonProgressBar-iOS";
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,25 +412,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2243CC125F570F690DC6F362778803B5 /* Headers */ = {
+		8AD459F3C48167EB309DF3408F249C72 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A9F74EC16AF8B958E01531BCF054402 /* ButtonProgressBar-iOS-umbrella.h in Headers */,
+				5B92C871C840F838DB2382A3483EDD6E /* Pods-ButtonProgressBar-iOS_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A946E6EC1413E013A0C1D09E853C4B1 /* Headers */ = {
+		A8AD45BEEABBDBB8F1072382B132DC6E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D7DF33CC6C746CF5AF8F719FF0F7C8F /* Pods-ButtonProgressBar-iOS_Example-umbrella.h in Headers */,
+				08CD1A6D0E8254C2A79A22FCA7FA9E0D /* ButtonProgressBar-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F59081CC73B9EF992E6D1E1CD21759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098FEACBDC85EDFFDE7616E590DDB173 /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A183F57F792B4A4E16CBF7F8A2EE7A /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				E0F59081CC73B9EF992E6D1E1CD21759 /* Headers */,
+				161484514B91BD64F2BD9ED77DC04FC1 /* Sources */,
+				3D0CE93CEB59A40E038D9580C51CD6F2 /* Frameworks */,
+				CDA2C3F66C4C4B78779350AE6E8CC5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
 		B15363B9232F2862A06FC7A0309FB42B /* Pods-ButtonProgressBar-iOS_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F31A1F46E3A13A75D47237509F07F76 /* Build configuration list for PBXNativeTarget "Pods-ButtonProgressBar-iOS_Tests" */;
@@ -265,7 +469,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D83BAD8900D135780CDA5E88DD9CF1DC /* PBXTargetDependency */,
+				C4F6E1767540A1B852E0805B765E4246 /* PBXTargetDependency */,
 			);
 			name = "Pods-ButtonProgressBar-iOS_Tests";
 			productName = Pods_ButtonProgressBar_iOS_Tests;
@@ -274,17 +478,18 @@
 		};
 		C715E447CFDB03E87D4143F47C6FB954 /* Pods-ButtonProgressBar-iOS_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1C74311AA6346E85C93E88B50F4E218 /* Build configuration list for PBXNativeTarget "Pods-ButtonProgressBar-iOS_Example" */;
+			buildConfigurationList = 1DD167378A35CB4B3473DE9DD24435F5 /* Build configuration list for PBXNativeTarget "Pods-ButtonProgressBar-iOS_Example" */;
 			buildPhases = (
-				9A946E6EC1413E013A0C1D09E853C4B1 /* Headers */,
-				59202566A1F65E521B9AEECC26E68E2E /* Sources */,
-				0ABF934E7000611724626098537095E1 /* Frameworks */,
-				58BC551CCB6E0FD810B4C90FFDD0B00A /* Resources */,
+				8AD459F3C48167EB309DF3408F249C72 /* Headers */,
+				6D3C9FF0F1950CECFDAFA298A37C7B68 /* Sources */,
+				EB7FDEC5FD10C0C920F5FD1C8C1912B3 /* Frameworks */,
+				DD8A982E717A51F2C4F633F388A1B137 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0316A3F1B8306ABC24FE1AF78CD8EE37 /* PBXTargetDependency */,
+				39E0A7C95995FA7EA24C2E8B3E24D056 /* PBXTargetDependency */,
+				F93323F56E8032D8E7EFFA22DE25EBED /* PBXTargetDependency */,
 			);
 			name = "Pods-ButtonProgressBar-iOS_Example";
 			productName = Pods_ButtonProgressBar_iOS_Example;
@@ -293,16 +498,17 @@
 		};
 		EDD09365F063A2127ADA1530B2E37F1A /* ButtonProgressBar-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58C6A3CBFC7A1194F6C22157C6CA5DF8 /* Build configuration list for PBXNativeTarget "ButtonProgressBar-iOS" */;
+			buildConfigurationList = 84238B94A658AF4032A8612BD8C52C22 /* Build configuration list for PBXNativeTarget "ButtonProgressBar-iOS" */;
 			buildPhases = (
-				2243CC125F570F690DC6F362778803B5 /* Headers */,
-				D351C64DEEBCC1FFF9C754F7BF2A481E /* Sources */,
-				C3887CB1F607730ED42735665C64BF24 /* Frameworks */,
-				64328D9DC9BB814B73D216A9CF0144B4 /* Resources */,
+				A8AD45BEEABBDBB8F1072382B132DC6E /* Headers */,
+				D27028E24CD99AE4C425CAFEA61666F4 /* Sources */,
+				4DA30BCE4AD45C29F19A222969B6BB4C /* Frameworks */,
+				D90719134871E6719EF7F48F7A0B87C3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				62E08FAAB362C9A772165FD97C23A8BA /* PBXTargetDependency */,
 			);
 			name = "ButtonProgressBar-iOS";
 			productName = ButtonProgressBar_iOS;
@@ -327,33 +533,41 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0F33A478288E0F8C0E6CE052BAABFBEE /* Products */;
+			productRefGroup = 5EC1B90A05A263F27CF1B1C4870AC9F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EDD09365F063A2127ADA1530B2E37F1A /* ButtonProgressBar-iOS */,
 				C715E447CFDB03E87D4143F47C6FB954 /* Pods-ButtonProgressBar-iOS_Example */,
 				B15363B9232F2862A06FC7A0309FB42B /* Pods-ButtonProgressBar-iOS_Tests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		58BC551CCB6E0FD810B4C90FFDD0B00A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64328D9DC9BB814B73D216A9CF0144B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BDFB8F6A8FA33786BBEC77383AB9DDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA2C3F66C4C4B78779350AE6E8CC5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90719134871E6719EF7F48F7A0B87C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8A982E717A51F2C4F633F388A1B137 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +577,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		161484514B91BD64F2BD9ED77DC04FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93EDB630040679D4B1945D251F422A7 /* Constraint.swift in Sources */,
+				FA6C1FAD95CE78514978A29D6BBA8750 /* ConstraintAttributes.swift in Sources */,
+				9090735A03BC8F2D550BA552C4646CD1 /* ConstraintConfig.swift in Sources */,
+				049BDC0E39F547A39B34A2D6FE5E9C04 /* ConstraintConstantTarget.swift in Sources */,
+				77CE05A3F7ABC7CC4651F699894A79F4 /* ConstraintDescription.swift in Sources */,
+				D0A574FD0B228553267212046F81C883 /* ConstraintDirectionalInsets.swift in Sources */,
+				C8EB7EA1E565324579EA812BEBF8C9AB /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				8C45AB7FACE7869C437AF101B71FB823 /* ConstraintDSL.swift in Sources */,
+				8A88D21C19BF16DD19C6BD681592375D /* ConstraintInsets.swift in Sources */,
+				E544EF10E2EA4CC7EE551BE43E43DD57 /* ConstraintInsetTarget.swift in Sources */,
+				734F7B22C4ACB1A1C3364061CFB2C871 /* ConstraintItem.swift in Sources */,
+				7AA5A03C0B2E43376BD0AA5802232778 /* ConstraintLayoutGuide.swift in Sources */,
+				6C6300F8D3E19B5119D49225F4561214 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				B99B1B3189783D1E1DD345DF9F233ACF /* ConstraintLayoutGuideDSL.swift in Sources */,
+				017D8E23FFFAD02F9B461E019FB3306B /* ConstraintLayoutSupport.swift in Sources */,
+				C5E69D6A4A3FF5C8405B633619CC6A76 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				2F9C15250FEF2AE0E4C7C554907722F0 /* ConstraintMaker.swift in Sources */,
+				90E06E499F3D00DE5BA4F7AD4528A9A8 /* ConstraintMakerEditable.swift in Sources */,
+				DA9A789122D85960452DD3ED2A72E884 /* ConstraintMakerExtendable.swift in Sources */,
+				5E92D0B873AEA59036C6B2F0DAE2E4C5 /* ConstraintMakerFinalizable.swift in Sources */,
+				83573567140F29FE9B349ACE5AC625B0 /* ConstraintMakerPriortizable.swift in Sources */,
+				203FAB4DF04BA05294C1EBA4912437CD /* ConstraintMakerRelatable.swift in Sources */,
+				01F31A5CBA528028B6BF89C04FF2A013 /* ConstraintMultiplierTarget.swift in Sources */,
+				CFAD8244C22EFF904DAC3AE1CD40AEC7 /* ConstraintOffsetTarget.swift in Sources */,
+				2300EB55801F3C75E6900ECF267397DA /* ConstraintPriority.swift in Sources */,
+				4E98267841C85116878077E6CFFB4865 /* ConstraintPriorityTarget.swift in Sources */,
+				1289E69886865C4241277016A585D521 /* ConstraintRelatableTarget.swift in Sources */,
+				74ABE7F4C7F4D2B3E9477513FF73C540 /* ConstraintRelation.swift in Sources */,
+				15E7C6F60688E7AE20464C56558B9CF6 /* ConstraintView.swift in Sources */,
+				23A1D538A9CDC0E1529C5880D3817692 /* ConstraintView+Extensions.swift in Sources */,
+				5D4AEFF4426A819FF6186BC48D3CCA5F /* ConstraintViewDSL.swift in Sources */,
+				64BBFB90316A811BD30EBF70F168A9BA /* Debugging.swift in Sources */,
+				9AD69A85766E798F7667D278AC3638F0 /* LayoutConstraint.swift in Sources */,
+				EB8A7033F2BEB2BC77793EDCB7B9100F /* LayoutConstraintItem.swift in Sources */,
+				DE63646BF0C978D1905F666E0D4262BE /* SnapKit-dummy.m in Sources */,
+				D3F63E45754ECCEF0853FF5CB145A655 /* Typealiases.swift in Sources */,
+				DC3C1A546167F9725C89DC481F4157A4 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		290E779CCCB7166398F57D54C63E78EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,37 +629,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59202566A1F65E521B9AEECC26E68E2E /* Sources */ = {
+		6D3C9FF0F1950CECFDAFA298A37C7B68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E550D94B9E78788C6E5B193F665B3D8 /* Pods-ButtonProgressBar-iOS_Example-dummy.m in Sources */,
+				86A3FAEF7037CE045D54BFBC2AFB2993 /* Pods-ButtonProgressBar-iOS_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D351C64DEEBCC1FFF9C754F7BF2A481E /* Sources */ = {
+		D27028E24CD99AE4C425CAFEA61666F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9D07F8E19025B9BF7E4AEBCB100C82 /* ButtonProgressBar.swift in Sources */,
-				4DFC7537EBB9EDECEFA8F5F95ACE69B9 /* ButtonProgressBar-iOS-dummy.m in Sources */,
+				21A6A95A2B0A6EC2F2F76F8FA698AF2D /* ButtonProgressBar.swift in Sources */,
+				2E4DAAA5D2E2E80A07EF37E743171B9E /* ButtonProgressBar-iOS-dummy.m in Sources */,
+				CDD5900E2117A2E62E1BDBA414B236EF /* ProgressButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0316A3F1B8306ABC24FE1AF78CD8EE37 /* PBXTargetDependency */ = {
+		39E0A7C95995FA7EA24C2E8B3E24D056 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ButtonProgressBar-iOS";
 			target = EDD09365F063A2127ADA1530B2E37F1A /* ButtonProgressBar-iOS */;
-			targetProxy = 928FA62C4E32E2B780E743137F58E0E5 /* PBXContainerItemProxy */;
+			targetProxy = FF1FDBA8C04462BC781864A0853A304D /* PBXContainerItemProxy */;
 		};
-		D83BAD8900D135780CDA5E88DD9CF1DC /* PBXTargetDependency */ = {
+		62E08FAAB362C9A772165FD97C23A8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = B494DA710C9599102E66FA0878D812E0 /* PBXContainerItemProxy */;
+		};
+		C4F6E1767540A1B852E0805B765E4246 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ButtonProgressBar-iOS_Example";
 			target = C715E447CFDB03E87D4143F47C6FB954 /* Pods-ButtonProgressBar-iOS_Example */;
-			targetProxy = BD16B71A427CE56BBDE077A519E593DC /* PBXContainerItemProxy */;
+			targetProxy = A077A8653F8DF6979C8D75A4019FBFDE /* PBXContainerItemProxy */;
+		};
+		F93323F56E8032D8E7EFFA22DE25EBED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 214DE97EDD54C4AAD547E822C40B0CD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -439,11 +710,10 @@
 			};
 			name = Debug;
 		};
-		79D73E3B19355DA53E4106A81A99D4F6 /* Debug */ = {
+		640F10D6D100CFFED57B6057ACDA314B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA3065A27BAD736BD925F05EAD96C4 /* Pods-ButtonProgressBar-iOS_Example.debug.xcconfig */;
+			baseConfigurationReference = 7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -453,29 +723,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7AE9C62015B6E8764A450C4FD82BA875 /* Release */ = {
+		76AD3C58FED022171CDD9B458E648F15 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3312B489089A85666624DE0F0EF514CD /* ButtonProgressBar-iOS.release.xcconfig */;
+			baseConfigurationReference = A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -484,14 +754,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS.modulemap";
-				PRODUCT_MODULE_NAME = ButtonProgressBar_iOS;
-				PRODUCT_NAME = ButtonProgressBar_iOS;
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -565,11 +835,10 @@
 			};
 			name = Release;
 		};
-		8592DA6B0CF23F08CAAACC2F21115BDF /* Release */ = {
+		D0BD98B30B9429B0C1A25C3C8B70431E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E5A15D67D2DCC903652AF2064C0DD03 /* Pods-ButtonProgressBar-iOS_Example.release.xcconfig */;
+			baseConfigurationReference = 8E8064C64ED1043CF39921904EC318F7 /* ButtonProgressBar-iOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -579,25 +848,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ButtonProgressBar_iOS;
+				PRODUCT_NAME = ButtonProgressBar_iOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -665,10 +932,78 @@
 			};
 			name = Debug;
 		};
-		E4063BBF8288927A54016FCE392EC9DC /* Debug */ = {
+		D3F0D50FA5054E4E82D9F490B1CF4DDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ED2C84B4E4EBDB9132AE8D46670E56B /* ButtonProgressBar-iOS.debug.xcconfig */;
+			baseConfigurationReference = EFAA3065A27BAD736BD925F05EAD96C4 /* Pods-ButtonProgressBar-iOS_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEC1FDB24A0CAC2E3E093A61101BBCB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5A15D67D2DCC903652AF2064C0DD03 /* Pods-ButtonProgressBar-iOS_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F646816723C8F0FC68213B058F4511BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14042ADD85AB478E35F015BF278EACC /* ButtonProgressBar-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -680,7 +1015,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS.modulemap";
 				PRODUCT_MODULE_NAME = ButtonProgressBar_iOS;
@@ -690,10 +1025,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		FB4D3101E64127A6AC9806CA5B1B3116 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -732,20 +1068,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1DD167378A35CB4B3473DE9DD24435F5 /* Build configuration list for PBXNativeTarget "Pods-ButtonProgressBar-iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F0D50FA5054E4E82D9F490B1CF4DDB /* Debug */,
+				DEC1FDB24A0CAC2E3E093A61101BBCB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
 				7EE7A78859F657F6BEFC651185B43192 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		58C6A3CBFC7A1194F6C22157C6CA5DF8 /* Build configuration list for PBXNativeTarget "ButtonProgressBar-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4063BBF8288927A54016FCE392EC9DC /* Debug */,
-				7AE9C62015B6E8764A450C4FD82BA875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -759,11 +1095,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1C74311AA6346E85C93E88B50F4E218 /* Build configuration list for PBXNativeTarget "Pods-ButtonProgressBar-iOS_Example" */ = {
+		84238B94A658AF4032A8612BD8C52C22 /* Build configuration list for PBXNativeTarget "ButtonProgressBar-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79D73E3B19355DA53E4106A81A99D4F6 /* Debug */,
-				8592DA6B0CF23F08CAAACC2F21115BDF /* Release */,
+				D0BD98B30B9429B0C1A25C3C8B70431E /* Debug */,
+				F646816723C8F0FC68213B058F4511BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A183F57F792B4A4E16CBF7F8A2EE7A /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640F10D6D100CFFED57B6057ACDA314B /* Debug */,
+				76AD3C58FED022171CDD9B458E648F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

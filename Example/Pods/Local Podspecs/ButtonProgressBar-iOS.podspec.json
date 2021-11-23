@@ -21,9 +21,14 @@
   },
   "social_media_url": "https://twitter.com/thePsguy",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "swift_versions": "5.0",
   "source_files": "Source/*.swift",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  },
   "swift_version": "5.0"
 }
