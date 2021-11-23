@@ -8,6 +8,7 @@
 
 import UIKit
 import ButtonProgressBar_iOS
+import SnapKit
 
 class ViewController: UIViewController {
     
@@ -89,8 +90,7 @@ class ViewController: UIViewController {
         }
         downloadBtn.masksToBounds = true
         downloadBtn.cornerRadius = 22
-        downloadBtn.progressNegativeColor = .black
-        downloadBtn.setProgressColor(color: .red)
+		downloadBtn.setProgressColor(color: .red, negativeColor: .black)
         downloadBtn.setTitle("Download", for: .normal)
         downloadBtn.setTitleColor(.white, for: .normal)
         downloadBtn.addTarget(self, action: #selector(tapOnTest), for: .touchUpInside)

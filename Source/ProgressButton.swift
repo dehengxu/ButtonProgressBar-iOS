@@ -6,41 +6,92 @@
 //
 
 import UIKit
-import SnapKit
+//import SnapKit
 
+fileprivate extension UIView {
+	var width: CGFloat {
+		get {
+			return self.frame.size.width
+		}
+		set {
+			self.frame.size.width = newValue
+		}
+	}
+
+	var height: CGFloat {
+		get {
+			return self.frame.size.height
+		}
+		set {
+			self.frame.size.height = newValue
+		}
+	}
+
+	var x: CGFloat {
+		get {
+			return self.frame.origin.x
+		}
+		set {
+			self.frame.origin.x = newValue
+		}
+	}
+
+	var y: CGFloat {
+		get {
+			return self.frame.origin.y
+		}
+		set {
+			self.frame.origin.y = newValue
+		}
+	}
+}
+
+private class ProgressView: UIView {
+
+	var progress: CGFloat = 0.0 {
+		didSet {
+			self.progressMask.width = self.progress * self.width
+		}
+	}
+
+	var progressColor: UIColor = .black {
+		didSet {
+			progressMask.backgroundColor = progressColor
+		}
+	}
+
+	private var progressMask = UIView()
+
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+		self.addSubview(progressMask)
+		progressMask.width = 0
+	}
+
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		progressMask.x = 0
+		progressMask.y = 0
+		progressMask.height = self.height
+		progressMask.width = self.width * progress
+	}
+	
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+	
+}
+
+@objc(ProgressButton)
 public class ProgressButton: UIButton {
 
-    private(set) public var progress: CGFloat = 0.0 {
+    @objc dynamic private(set) public var progress: CGFloat = 0.0 {
         didSet {
-            if progress > 1.0 {
-                self.progressLayer.strokeEnd = 0.5
-                print("A did set progress: \(progress), \(self.progressLayer.strokeEnd)")
-                return
-            } else if progress < 0.0 {
-                self.progressLayer.strokeEnd = 0.0
-                print("B did set progress: \(progress), \(self.progressLayer.strokeEnd)")
-                return
-            }
-            self.progressLayer.strokeEnd = progress / 2
-            print("did set progress: \(progress), \(self.progressLayer.strokeEnd)")
+			progressView.progress = progress
         }
     }
 
-    private(set) public var progressColor: UIColor = .black {
-        didSet {
-            self.progressLayer.strokeColor = progressColor.cgColor
-            self.backgroundColor = progressColor
-        }
-    }
-
-    public var progressNegativeColor: UIColor = .black {
-        didSet {
-            self.progressView.backgroundColor = progressNegativeColor
-        }
-    }
-
-    public var progressLayer: CAShapeLayer!
-    public var progressView: UIView = UIView()
+    private var progressView = ProgressView()
     public var cornerRadius: CGFloat = 0.0 {
         didSet {
             self.layer.cornerRadius = cornerRadius
@@ -58,55 +109,37 @@ public class ProgressButton: UIButton {
     override public init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .black
-
-        let pathHeight = frame.height
-        let pathRect = CGRect(x: 0, y: 0, width: frame.width - 4, height: pathHeight)
-        let bezierPath = UIBezierPath(rect: pathRect)
-
-        self.progressLayer = CAShapeLayer()
-        progressLayer.path = bezierPath.cgPath
-        progressLayer.fillColor = UIColor.clear.cgColor
-        progressLayer.strokeColor = progressColor.cgColor
-        progressLayer.frame = CGRect(origin: .zero, size: pathRect.size)
-        progressLayer.strokeEnd = 0
-        progressLayer.lineWidth = pathHeight * 2
-        self.progressView.layer.addSublayer(progressLayer)
-
-        progressView.backgroundColor = .white
         self.addSubview(progressView)
-        progressView.snp.makeConstraints {
-            $0.left.top.equalToSuperview().offset(2)
-            $0.width.height.equalToSuperview().offset(-4)
-        }
-
+		progressView.isUserInteractionEnabled = false
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+	public override func layoutSubviews() {
+		super.layoutSubviews()
+		progressView.frame = CGRect(x: 2, y: 2, width: self.width - 4, height: self.height - 4)
+	}
 
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        let pathHeight = progressView.frame.height
-        let pathWidth = progressView.frame.width
-        let pathRect = CGRect(x: 0, y: 0, width: self.progressView.frame.width, height: pathHeight)
-        let bezierPath = UIBezierPath(rect: pathRect)
-        self.progressLayer.path = bezierPath.cgPath
-        self.progressLayer.frame = pathRect // CGRect(origin: .zero, size: pathRect.size)
-        print("layout subviews: \(self.progressView.frame), \(self.progressLayer.frame), pathRect: \(pathRect)")
-    }
     public func resetProgress() {
         self.progress = 0.0
     }
 
     public func setProgress(progress: CGFloat, _ animated: Bool = false) {
-        self.progress = progress
+		if animated {
+			UIView.animate(withDuration: 0.3) {
+				self.progress = progress
+			}
+		} else {
+			self.progress = progress
+		}
     }
 
-    public func setProgressColor(color: UIColor) {
-        //self.progressLayer.backgroundColor = color.cgColor
-        self.progressColor = color
+	public func setProgressColor(color: UIColor, negativeColor: UIColor = .clear) {
+		self.backgroundColor = color
+		self.progressView.progressColor = color
+		self.progressView.backgroundColor = negativeColor
     }
     
     /*

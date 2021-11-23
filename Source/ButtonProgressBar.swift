@@ -22,10 +22,53 @@ THE SOFTWARE.
 
 import UIKit
 
+fileprivate extension UIView {
+	var width: CGFloat {
+		get {
+			return self.frame.size.width
+		}
+		set {
+			self.frame.size.width = newValue
+		}
+	}
+
+	var height: CGFloat {
+		get {
+			return self.frame.size.height
+		}
+		set {
+			self.frame.size.height = newValue
+		}
+	}
+
+	var x: CGFloat {
+		get {
+			return self.frame.origin.x
+		}
+		set {
+			self.frame.origin.x = newValue
+		}
+	}
+
+	var y: CGFloat {
+		get {
+			return self.frame.origin.y
+		}
+		set {
+			self.frame.origin.y = newValue
+		}
+	}
+}
+
+private class ProgressView: UIView {
+
+}
+
+@objc(ButtonProgressBar)
 public class ButtonProgressBar: UIButton {
     
     private var cornerRadius: CGFloat = 5
-    public private(set) var progress: CGFloat = 0.0 {
+    @objc dynamic public private(set) var progress: CGFloat = 0.0 {
         didSet {
             if progress > 1.0 {
                 progressLayer.strokeEnd = 1.0 / 2.0
