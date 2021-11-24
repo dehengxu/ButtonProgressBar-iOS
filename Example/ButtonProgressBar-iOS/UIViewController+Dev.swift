@@ -14,8 +14,11 @@ fileprivate struct IOSDev {
 }
 
 extension UIViewController {
-    func show(_ config:((_ viewController: UIViewController, _ closeButton: UIButton) -> Void)? = nil) {
+
+    @objc public func show(_ config:((_ viewController: UIViewController, _ closeButton: UIButton) -> Void)? = nil) {
         if let window = UIApplication.shared.keyWindow {
+            self.view.backgroundColor = .white
+            view.frame = window.bounds
             window.addSubview(self.view)
 
             let btn = UIButton()
@@ -28,16 +31,16 @@ extension UIViewController {
             } else {
                 btn.frame = CGRect(x: 16, y: 16, width: 32, height: 32)
             }
-            btn.addTarget(self, action: #selector(clickToClose), for: .touchUpInside)
-            self.view.backgroundColor = .white
+            btn.addTarget(self, action: #selector(self.clickToClose), for: .touchUpInside)
+
             self.view.addSubview(btn)
-            view.frame = window.bounds
 
             config?(self, btn)
         }
     }
 
-    @objc public func clickToClose() {
+    @objc private func clickToClose() {
+        print("close view controller")
         if let btn = self.view.viewWithTag(IOSDev.closeButtonTag) as? UIButton {
             btn.removeTarget(self, action: #selector(clickToClose), for: .touchUpInside)
             btn.removeFromSuperview()

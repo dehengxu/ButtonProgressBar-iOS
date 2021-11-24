@@ -108,12 +108,14 @@ class ViewController: UIViewController {
             btn.setProgress(progress: 0.3)
             btn.frame = CGRect(origin: .zero, size: CGSize(width: 128, height: 64))
             btn.center = viewController.view.center
+            btn.cornerRadius = 32
+            btn.masksToBounds = true
             btn.addTarget(self, action: #selector(self.clickProgressButton(_:)), for: .touchUpInside)
             viewController.view.addSubview(btn)
         }
     }
 
-    @objc private func clickProgressButton(_ sender: ProgressButton) {
+    @objc public func clickProgressButton(_ sender: ProgressButton) {
         sender.setProgress(progress: sender.progress + 0.05, true)
     }
     
