@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		74F71C2C274DD984009A1FC6 /* UIViewController+Dev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F71C2B274DD984009A1FC6 /* UIViewController+Dev.swift */; };
 		DD6EABDC5BD83ECE916983F6 /* Pods_ButtonProgressBar_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FCD7F88F888CDC1653FECD /* Pods_ButtonProgressBar_iOS_Tests.framework */; };
 		F7032A3BA75C19B93C804BE6 /* Pods_ButtonProgressBar_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117EDF792490C75FC8A1202D /* Pods_ButtonProgressBar_iOS_Example.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		607FACE51AFB9204008FA782 /* ButtonProgressBar-iOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ButtonProgressBar-iOS_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		74F71C2B274DD984009A1FC6 /* UIViewController+Dev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dev.swift"; sourceTree = "<group>"; };
 		89CA383809FFA3A8C232F51C /* Pods-ButtonProgressBar-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButtonProgressBar-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ButtonProgressBar-iOS_Example/Pods-ButtonProgressBar-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		89FCD7F88F888CDC1653FECD /* Pods_ButtonProgressBar_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButtonProgressBar_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CAFE402C8B22A5A9234201 /* Pods-ButtonProgressBar-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButtonProgressBar-iOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ButtonProgressBar-iOS_Tests/Pods-ButtonProgressBar-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				4D7D54FE1E9FBE5100FA7BA3 /* Main.storyboard */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				74F71C2B274DD984009A1FC6 /* UIViewController+Dev.swift */,
 			);
 			name = "Example for ButtonProgressBar-iOS";
 			path = "ButtonProgressBar-iOS";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F71C2C274DD984009A1FC6 /* UIViewController+Dev.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

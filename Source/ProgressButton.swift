@@ -95,7 +95,7 @@ public class ProgressButton: UIButton {
     public var cornerRadius: CGFloat = 0.0 {
         didSet {
             self.layer.cornerRadius = cornerRadius
-            self.progressView.layer.cornerRadius = cornerRadius
+            self.progressView.layer.cornerRadius = cornerRadius - 2.0
         }
     }
 
@@ -127,12 +127,23 @@ public class ProgressButton: UIButton {
     }
 
     public func setProgress(progress: CGFloat, _ animated: Bool = false) {
+        var _progress = progress
+        if _progress < 0.0 {
+            _progress = 0.0
+        } else if _progress > 1.0 {
+            _progress = 1.0
+        }
+        if _progress == self.progress {
+            print("\(self.classForCoder) progress is not changed")
+            return
+        }
+
 		if animated {
 			UIView.animate(withDuration: 0.3) {
-				self.progress = progress
+				self.progress = _progress
 			}
 		} else {
-			self.progress = progress
+			self.progress = _progress
 		}
     }
 

@@ -98,7 +98,23 @@ class ViewController: UIViewController {
         downloadBtn.setProgress(progress: prog, false)
         downloadButton.setProgress(progress: prog, false)
 
+    }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIViewController().show { viewController, _ in
+            let btn = ProgressButton()
+            btn.setProgressColor(color: .orange, negativeColor: .black)
+            btn.setProgress(progress: 0.3)
+            btn.frame = CGRect(origin: .zero, size: CGSize(width: 128, height: 64))
+            btn.center = viewController.view.center
+            btn.addTarget(self, action: #selector(self.clickProgressButton(_:)), for: .touchUpInside)
+            viewController.view.addSubview(btn)
+        }
+    }
+
+    @objc private func clickProgressButton(_ sender: ProgressButton) {
+        sender.setProgress(progress: sender.progress + 0.05, true)
     }
     
     @objc func progressComplete(sender: AnyObject?) {
